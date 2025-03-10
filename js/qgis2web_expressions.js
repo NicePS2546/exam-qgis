@@ -758,13 +758,13 @@ function fnc_project_color(values, context) {
 
 
 function exp_label_after16_2_eval_expression(context) {
-    // 'จังหวัด: ' || "จังหวัด" || '\n' || 'สถาณีรถไฟ' || "ชื่อสถานีรถไฟ"
+    // 'จังหวัด: ' || "จังหวัด" || '\n' || 'ชื่อสถานีรถไฟ' || "ชื่อสถานีรถไฟ"
 
     var feature = context.feature;
     
     if (feature.properties) {
-        return (((('จังหวัด: ' + feature.properties['จังหวัด'] ) + '\n') + 'สถาณีรถไฟ') + feature.properties['ชื่อสถานีรถไฟ'] );
+        return (((('จังหวัด: ' + feature.properties['จังหวัด'] ) + '\n') + 'ชื่อสถานีรถไฟ') + feature.properties['ชื่อสถานีรถไฟ'] );
     } else {
-        return (((('จังหวัด: ' + feature['จังหวัด'] ) + '\n') + 'สถาณีรถไฟ') + feature['ชื่อสถานีรถไฟ'] );
+        return (((('จังหวัด: ' + feature['จังหวัด'] ) + '\n') + 'ชื่อสถานีรถไฟ') + feature['ชื่อสถานีรถไฟ'] );
     }
 }
